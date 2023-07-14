@@ -1,0 +1,112 @@
+.project-container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  margin-top: 3rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-title {
+  font-size: 20px;
+  color: #3636c1;
+  justify-self: flex-end;
+  font-weight: bolder;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0rem 2rem;
+  line-height: 1.5;
+}
+.project-content {
+  margin-bottom: 2rem;
+}
+.project-name {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Arvo", serif;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+.project-icon {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.project-name:hover {
+  color: #282db3;
+  transform: translateX(5px);
+  .project-icon {
+    transform: translateX(5px);
+    color: #282db3;
+    font-weight: 600;
+  }
+}
+.project-detail {
+  font-size: 13px;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  font-family: "Arvo", serif;
+  color: #5d3333;
+}
+.project-tech {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.tech-container {
+  border: 1px solid #babaef;
+  color: #1a3fa9;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0px 10px;
+  text-transform: lowercase;
+  text-align: center;
+  font-family: "Arvo", serif;
+}
+
+.project-end {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(145, 111, 111);
+  width: fit-content;
+  margin: 1rem auto;
+}
+.project-end:hover {
+  color: #282db3;
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 991px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .project-title {
+    width: fit-content;
+    border-bottom: 1px solid #9c9dcf;
+    margin-bottom: 1rem;
+  }
+  .project-desc {
+    margin: 0rem 1rem;
+  }
+}

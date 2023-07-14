@@ -1,0 +1,107 @@
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  gap: 5px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.title {
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 3rem;
+  color: black;
+}
+.intro-name {
+  font-size: 24px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#0009ff, #000);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+.contact-btn {
+  display: inline-flex;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #5f3a3a;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Arvo", serif;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding-left: 5px;
+}
+.contact-btn:hover {
+  transform: translateX(2px);
+  color: #282db3;
+  font-weight: 500;
+}
+.btn-text {
+  padding-bottom: 1px;
+  border-bottom: 1.5px solid #282db3;
+}
+.btn-icon {
+  position: relative;
+  top: 1px;
+  padding-right: 5px;
+}
+
+.right-section {
+  min-width: 400px;
+}
+
+@media screen and (max-width: 567px) {
+  .hero-section {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    gap: 2rem;
+  }
+  .left-section {
+    gap: 0px;
+  }
+  .intro {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .intro-name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    margin-bottom: 3rem;
+  }
+
+  .intro {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+  }
+  .intro-name {
+    font-size: 30px;
+  }
+}

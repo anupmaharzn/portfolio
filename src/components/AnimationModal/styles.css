@@ -1,0 +1,10 @@
+.animation-container {
+  height: 400px;
+  overflow: hidden !important;
+}
+
+@media screen and (max-width: 567px) {
+  .animation-container {
+    height: 320px;
+  }
+}
