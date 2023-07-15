@@ -53,3 +53,9 @@
     text-align: justify;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .info-container {
+    margin-top: 2rem;
+  }
+}
